@@ -18,7 +18,7 @@ def calcNewRating(oldRating:int, expectedThisPlayer:float, observed:float):
 # take in 2 ratings, and match outcome
 # matchResult == 0 => playerA won,
 # matchResult == 1 => playerB won,
-# matchResult == 2 => tie (should never happen
+# matchResult == 2 => tie (should never happe
 def expectAndNewRating(ratingA, ratingB, matchResult) -> list[int]:
     EA_1st = expectedScore(ratingA, ratingB)
     EB_1st = expectedScore(ratingB, ratingA)
