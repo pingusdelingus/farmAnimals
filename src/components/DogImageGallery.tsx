@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
-import { expectAndNewRating } from '@/elo';
 
-// Dog class to represent each dog with an ELO rating
-export class Dog {
+class Dog {
   constructor(public id: number, public imagePath: string, public eloRating: number = 1600) {}
 }
+
+export { Dog };
 
 // Array of dog instances
 export const DOGS = Array.from({ length: 118 }, (_, i) => new Dog(i, `/src/oneDogFromEachBreed/dog${i + 1}.jpeg`));
