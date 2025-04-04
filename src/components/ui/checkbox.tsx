@@ -4,11 +4,6 @@ import { CheckIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
-type ImageCardProps ={
-  src: string;
-  alt?: string;
-  ratio?: number
-};
 
 
 function Checkbox({

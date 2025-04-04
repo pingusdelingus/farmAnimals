@@ -18,8 +18,8 @@ function calcNewRating(oldRating, expectedThisPlayer, observed) {
 function expectAndNewRating(ratingA, ratingB, matchResult) {
     const EA_1st = expectedScore(ratingA, ratingB);
     const EB_1st = expectedScore(ratingB, ratingA);
-    console.log(`EA is: ${EA_1st}`);
-    console.log(`EB is: ${EB_1st}`);
+//    console.log(`EA is: ${EA_1st}`);
+ //   console.log(`EB is: ${EB_1st}`);
 
     let newA, newB;
 
@@ -39,22 +39,22 @@ function expectAndNewRating(ratingA, ratingB, matchResult) {
 }
 
 // Example usage
-function main() {
-    const a = 1613;
-    const b = 1609;
+// function main() {
+//     const a = 1613;
+//     const b = 1609;
 
-    const [newA, newB] = expectAndNewRating(a, b, 1);
-    console.log(`newA is ${newA}`);
-    console.log(`newB is ${newB}`);
-}
+//     const [newA, newB] = expectAndNewRating(a, b, 1);
+//     console.log(`newA is ${newA}`);
+//     console.log(`newB is ${newB}`);
+// }
 
 // Run the example if this file is run directly
-if (require.main === module) {
-    main();
-}
+// if (require.main === module) {
+//     main();
+// }
 
 // Export the functions for use in other files
-module.exports = {
+export {
     expectedScore,
     calcNewRating,
     expectAndNewRating
